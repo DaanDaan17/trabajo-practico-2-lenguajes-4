@@ -1,0 +1,26 @@
+nav {
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 40px;
+}
