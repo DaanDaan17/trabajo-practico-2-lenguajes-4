@@ -108,3 +108,305 @@ h1 {
   font-weight: bold;
   margin-top: 20px;
 }
+
+/* Estilos generales de las páginas */
+main {
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f7fb;
+  color: #263244;
+}
+
+h1,
+h2,
+h3 {
+  color: #14243a;
+}
+
+nav {
+  background: #101d32;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #67d5ff;
+  text-decoration: none;
+}
+
+/* Portada de Inicio */
+.portada {
+  padding: 65px 24px;
+  border-radius: 20px;
+  color: white;
+  background:
+    linear-gradient(120deg, rgba(8, 20, 42, 0.96), rgba(20, 72, 112, 0.82)),
+    url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.portada h1 {
+  color: white;
+  font-size: clamp(36px, 6vw, 60px);
+  margin: 15px 0;
+  letter-spacing: -1px;
+}
+
+.portada-descripcion {
+  max-width: 680px;
+  margin: 0 auto 25px;
+  line-height: 1.7;
+}
+
+.etiqueta {
+  color: #0784b9;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.portada .etiqueta {
+  color: #8be1ff;
+}
+
+.boton-portada {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: #0784b9;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.boton-portada:hover {
+  background: #05648e;
+}
+
+/* Secciones */
+.seccion-lanzamientos,
+.pagina-servicios,
+.pagina-contacto {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion-lanzamientos {
+  padding-top: 35px;
+}
+
+.seccion-lanzamientos > h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.texto-seccion {
+  margin-bottom: 25px;
+  color: #64748b;
+}
+
+.encabezado-pagina {
+  margin: 15px auto 35px;
+}
+
+.encabezado-pagina h1 {
+  margin: 10px 0;
+  font-size: clamp(32px, 5vw, 46px);
+}
+
+.encabezado-pagina > p:last-child {
+  color: #64748b;
+}
+
+/* Tarjetas de Inicio y Servicios */
+.grilla-lanzamientos,
+.grilla-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.tarjeta-lanzamiento,
+.tarjeta-servicio {
+  overflow: hidden;
+  border: 1px solid #e1e8f0;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 5px 18px rgba(19, 39, 64, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-lanzamiento:hover,
+.tarjeta-servicio:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(19, 39, 64, 0.14);
+}
+
+.tarjeta-lanzamiento > img,
+.tarjeta-servicio > img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  background: #e5eaf0;
+}
+
+.contenido-tarjeta {
+  padding: 20px;
+}
+
+.contenido-tarjeta h2,
+.contenido-tarjeta h3 {
+  margin: 0 0 14px;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.contenido-tarjeta p {
+  margin: 10px 0;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.detalle-lanzamiento {
+  color: #526176;
+  font-size: 14px;
+}
+
+.categoria-servicio {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #e5f5ff;
+  color: #075985;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.fuente-api {
+  margin: 25px 0;
+  font-size: 14px;
+}
+
+.fuente-api a,
+.enlace-mapa {
+  color: #0676a8;
+  font-weight: 700;
+}
+
+.mensaje-error {
+  color: #b42318;
+  margin: 20px 0;
+}
+
+/* Página de contacto */
+.contacto-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 25px;
+  text-align: left;
+}
+
+.columna-formulario {
+  min-width: 0;
+}
+
+.columna-formulario .formulario-contenedor {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.mapa-contenedor {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid #e1e8f0;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(19, 39, 64, 0.08);
+}
+
+.mapa-contenedor h2 {
+  margin-bottom: 10px;
+}
+
+.mapa-contenedor p {
+  margin-bottom: 20px;
+  color: #64748b;
+}
+
+.mapa-contenedor iframe {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.enlace-mapa {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.enlace-mapa:hover {
+  text-decoration: underline;
+}
+
+/* Adaptación para tablets y celulares */
+@media (max-width: 900px) {
+  .grilla-lanzamientos,
+  .grilla-servicios {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contacto-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 18px;
+  }
+
+  nav {
+    gap: 18px;
+    padding: 16px 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .portada {
+    padding: 45px 18px;
+  }
+
+  .grilla-lanzamientos,
+  .grilla-servicios {
+    grid-template-columns: 1fr;
+  }
+
+  .mapa-contenedor {
+    padding: 18px;
+  }
+
+  .mapa-contenedor iframe {
+    height: 350px;
+  }
+}
